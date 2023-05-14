@@ -1,0 +1,172 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    max-width: 1280px;
+    margin: auto;
+    background-color: rgb(203, 204, 207);
+    color: #333333;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+header .button-image,
+header .logo {
+    width: 50px;
+    background-color: #ffffff00;
+    transition: 1s ease;
+}
+
+header #theme-button {
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
+
+.light-mode {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    justify-content: center;
+
+}
+
+.dark-mode {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+
+.grass-type {
+    background-color: #7ac74c;
+    max-width: max-content;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.fire-type {
+    background-color: #ee8130;
+    max-width: max-content;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.water-type {
+    background-color: #6390f0;
+    max-width: fit-content;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.fighting-type {
+    background-color: #fc6344;
+    max-width: fit-content;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.ground-type {
+    background-color: #E2BF65;
+    max-width: fit-content;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+main {
+    padding: 65px;
+}
+
+.pokemon-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.poke-card {
+    width: 250px;
+    background-color: #f3ecec;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 40px;
+    transition: 0.2s ease-in-out;
+}
+
+main .poke-card:hover {
+    background-color: #5c5c5c36;
+}
+
+body.dark-mode header .button-image:hover{ 
+    background-color: #313131a1;
+}
+
+header .button-image:hover {
+    background-color: #a39c9c8c;
+}
+
+.dark-mode .poke-card {
+    background-color: rgb(49, 46, 46);
+}
+
+body.dark-mode main .poke-card:hover {
+    background-color: rgb(110, 111, 112);
+}
+
+main .poke-card .info span {
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+main .poke-card .info{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid rgb(20, 20, 20);
+    border-radius: 10px;
+    font-weight: bold;
+}
+main .poke-card .gif{
+    max-width:200px ;
+    max-height:200px  ;
+}
+main .poke-card .type{
+    align-items: center;
+    display:flex ;
+    gap: 10px;
+    padding: 10px;
+    font-weight:normal
+}
+main .description{
+    overflow-y: auto;
+    height:80px;
+    padding-right: 10px;
+    font-weight:bold;
+}
+
+
+
+footer:hover{   
+    background-color: #918a8a;
+}
+
+
+/* ===== Scrollbar CSS ===== */
+
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+  *::-webkit-scrollbar-track {
+    background: #f1e9e9;
+}
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #582965;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+}
